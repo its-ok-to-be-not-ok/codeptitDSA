@@ -2,6 +2,10 @@
 
 using namespace std;
 
+// tạo 2 stack lưu node mỗi stack sẽ được push theo trình tự khác nhau, một là L to R(add node bên trái trước bên phải) và R to L
+// do khi in stack in kiểu LIFO nghĩa là ngược lại với trình tự add(vd: add L to R print R to L)
+// mỗi đợt thì phải in hết sạch node trong stack đang thực hiện in
+
 struct node
 {
     int val;
