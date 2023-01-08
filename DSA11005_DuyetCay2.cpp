@@ -2,6 +2,13 @@
 
 using namespace std;
 
+// dùng tập level order để xác định node gốc đầu tiên của cây là phần tử đầu tiên của dãy
+// tra vị trí của gốc trong dãy inorder từ đây ta tìm các phẩn tử sẽ ở bên trái gốc và bên phải cũng vậy
+// Quy luật: levelorder luôn đi từ trái sang phải nên node tiếp theo trong dãy sau node gốc trước đó có thể sẽ là node bên trái
+// rồi node sau nữa mới là node phải, trường hợp là bên phải trước là khi ở dãy inorder bên trái node gốc tìm được trc ko có phần tử nào
+// tương tự nếu bên phải node gốc rỗng thì phần tử tiếp sau node gốc trong dãy levelorder sẽ là node trái và node sau nữa cũng là trái
+// và là con của node trái trước đó.
+
 struct node
 {
     int val;
