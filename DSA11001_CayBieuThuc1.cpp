@@ -2,6 +2,12 @@
 
 using namespace std;
 
+// construct a tree with every leaf node as operand and middle node as operator.
+// create a stack to save operand every time we traversal over it.
+// when meet a operator we make a node contain it and 2 nodes to contain 2 top operands in stack, pop them after take out.
+// make right pointer of the operator node point at 1st taken-out operand and left pointer point at 2nd taken-out operand.
+// print the tree in inorder.
+
 struct node
 {
     string val;
