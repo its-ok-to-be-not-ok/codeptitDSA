@@ -2,8 +2,8 @@
 
 using namespace std;
 
-//tim depth cua node la bat ky o day ta chon do sau cua node la trai cung
-//check cay mot luot xem lieu co node la nao do sau khac node la ta vua tim ko
+//tìm depth của node lá bất kỳ ở đây ta chọn node lá trái cùng
+//check cây một lượt xem node lá nào có độ sâu khác với node lá ta vừa tìm không
 
 struct node
 {
