@@ -49,6 +49,7 @@ void deletetree(node *root)
 int main()
 {
     int t;
+    cin >> t;
     while(t--)
     {
         int n;
@@ -64,8 +65,8 @@ int main()
                 makenode(root, b, c);
             }
             else insertnode(root, a, b, c);
-            cout << full(root);
-            deletetree(root);
         }
+        cout << full(root);
+        deletetree(root);
     }
 }
