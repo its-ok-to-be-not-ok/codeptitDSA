@@ -66,7 +66,7 @@ int main()
             }
             else insertnode(root, a, b, c);
         }
-        cout << full(root);
+        cout << full(root) << endl;
         deletetree(root);
     }
 }
